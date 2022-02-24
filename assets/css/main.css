@@ -498,3 +498,7 @@ summary {
 .services .serviceList .listItem:hover span {
   color: #e74c3c;
 }
+
+.charts {
+  padding: 80px 0;
+}
