@@ -44,24 +44,30 @@
                 border-radius: 20px;
                 width: 200px;
                 position: relative;
+                padding-left: 20px;
 
                 .play {
                     display: block;
-                    width: 25px;
-                    height: 25px;
+                    width: 30px;
+                    height: 30px;
                     border-radius: 50% ;
                     background-color: $playButtonBgColor;
                     position: absolute;
-                    top: 10px;
+                    top: 5px;
                     left: 20px;
+                    margin: 0 20px 0 0;
 
                     &::before {
                         content: "";
                         width: 0;
                         height: 0;
                         border-style: solid;
-                        border-width: 1px 0 5px 4px;
+                        border-width: 7.5px 0 7.5px 15px;
                         border-color: transparent transparent transparent #000000;
+                        font-size: 1px;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateX(-50%) translateY(-50%);
                     }
                 }
             }
