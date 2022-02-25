@@ -1,0 +1,60 @@
+.carousel {
+    background-color: $carouselBgColor;
+    height: 50vh;
+
+    .card {
+        text-align: center;
+        padding: 50px 0;
+        color: $carouselTextColor;
+        line-height: 30px;
+
+        h2 {
+            font-size: 32px;
+            font-weight: 500;
+            font-family: $secondFont;
+        }
+
+        p {
+            padding:  0 150px;
+            font-size: 16px;
+        }
+        
+        .person {
+
+            img {
+                width: 60px;
+                height: 60px;
+            }
+            .fa-solid {
+                color: $carouselIconColor
+            }
+        }
+        .map {
+            margin-top: 1em;
+            & > button {
+              all: unset;
+              background: lighten($cardBlue, 10);
+              cursor: pointer;
+              margin: 0 0.125em;
+              position: relative;
+              user-select: none;
+              @include circle(1em);
+          
+              &.active {
+                &:after {
+                  background: $bgBlue;
+                  content: "";
+                  left: 50%;
+                  position: absolute;
+                  transform: translate(-50%, -50%);
+                  top: 50%;
+                  @include circle(0.5em);
+                }
+              }
+            }
+        }
+    }
+}
+
+        
+    

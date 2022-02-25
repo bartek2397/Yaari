@@ -8,4 +8,5 @@ window.addEventListener("scroll", () => {
         navigation.classList.remove("scroll")
     }
 
-})
+});
+
