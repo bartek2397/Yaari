@@ -3,6 +3,7 @@
 
     .priceBox {
         padding: 40px 0;
+        display: flex;
 
         .plan {
             width: calc(100% / 3);
@@ -18,10 +19,21 @@
             h2 {
                 font-size: 40px;
                 color: $HeaderColor;
+                font-weight: 600;
             }
             
             .btn {
                 margin: 20px 0;
+
+                &.btnRed {
+                    background-color: $redButtonColor;
+                }
+            }
+
+            &.red {
+                h2{
+                    color: $RedHeaderColor;
+                }
             }
         }
     }

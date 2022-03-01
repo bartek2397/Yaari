@@ -631,6 +631,9 @@ summary {
 
 .pricing .priceBox {
   padding: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .pricing .priceBox .plan {
@@ -655,8 +658,17 @@ summary {
 .pricing .priceBox .plan h2 {
   font-size: 40px;
   color: #585858;
+  font-weight: 600;
 }
 
 .pricing .priceBox .plan .btn {
   margin: 20px 0;
+}
+
+.pricing .priceBox .plan .btn.btnRed {
+  background-color: #e74c3c;
+}
+
+.pricing .priceBox .plan.red h2 {
+  color: #e74c3c;
 }
