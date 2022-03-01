@@ -1,0 +1,28 @@
+.pricing {
+    padding: 80px 0;
+
+    .priceBox {
+        padding: 40px 0;
+
+        .plan {
+            width: calc(100% / 3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h4 {
+                font-size: 20px;
+                color: $HeaderColor;
+            }
+
+            h2 {
+                font-size: 40px;
+                color: $HeaderColor;
+            }
+            
+            .btn {
+                margin: 20px 0;
+            }
+        }
+    }
+}
